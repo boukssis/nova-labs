@@ -62,9 +62,11 @@ export function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        open || scrolled
-          ? "border-b border-line bg-ink/85 backdrop-blur-md"
-          : "border-b border-transparent bg-transparent"
+        open
+          ? "border-b border-line bg-ink"
+          : scrolled
+            ? "border-b border-line bg-ink/85 backdrop-blur-md"
+            : "border-b border-transparent bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-[4.5rem] max-w-[1180px] items-center justify-between gap-6 px-5 sm:px-8">
@@ -132,11 +134,12 @@ export function Navbar() {
           <motion.nav
             id="mobile-nav"
             aria-label="Mobile"
-            className="fixed inset-0 top-[4.5rem] z-40 flex flex-col bg-ink px-5 pt-6 pb-10 sm:px-8 lg:hidden"
-            initial={reduce ? false : { opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={reduce ? undefined : { opacity: 0, y: -8 }}
-            transition={{ duration: reduce ? 0 : 0.32, ease: [0.22, 1, 0.36, 1] }}
+            className="fixed inset-x-0 top-[4.5rem] bottom-0 z-40 flex flex-col bg-ink px-5 pt-6 pb-10 sm:px-8 lg:hidden"
+            style={{ backgroundColor: "var(--ink)" }}
+            initial={reduce ? false : { y: -10 }}
+            animate={{ y: 0 }}
+            exit={reduce ? undefined : { y: -10 }}
+            transition={{ duration: reduce ? 0 : 0.28, ease: [0.22, 1, 0.36, 1] }}
           >
             <ul className="flex flex-col">
               {nav.map((item, index) => (
