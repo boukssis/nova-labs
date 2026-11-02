@@ -1,26 +1,163 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #070708;
+  --ink-2: #0d0d10;
+  --ink-3: #121216;
+  --paper: #f7f6f2;
+  --mute: #9d9ca5;
+  --line: rgba(247, 246, 242, 0.12);
+  --ember: #ff4d1a;
+  --ember-hot: #ff6840;
+  --ember-soft: rgba(255, 77, 26, 0.16);
+  --background: var(--ink);
+  --foreground: var(--paper);
 }
 
 @theme inline {
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-paper: var(--paper);
+  --color-mute: var(--mute);
+  --color-line: var(--line);
+  --color-ember: var(--ember);
+  --color-ember-hot: var(--ember-hot);
+  --color-ember-soft: var(--ember-soft);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  background: var(--ink);
+  scrollbar-color: #2a2a2e var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .rise {
+    animation: none;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(ellipse 80% 50% at 85% -10%, rgba(255, 77, 26, 0.09), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 0% 20%, rgba(247, 246, 242, 0.03), transparent 50%),
+    var(--ink);
+  color: var(--paper);
+  font-family: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+::selection {
+  background: var(--ember);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--paper);
+  outline-offset: 3px;
+}
+
+section[id] {
+  scroll-margin-top: 5.75rem;
+}
+
+h1,
+h2,
+.title,
+.display {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+.display {
+  font-size: clamp(2.85rem, 7.4vw, 6.75rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.86;
+}
+
+.title {
+  font-size: clamp(2.15rem, 4.4vw, 3.9rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.brand-mark {
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.link {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  transition: background-size 300ms ease;
+}
+
+.link:hover {
+  background-size: 100% 1px;
+}
+
+.surface-glow {
+  background:
+    radial-gradient(ellipse 70% 60% at 70% 40%, rgba(255, 77, 26, 0.08), transparent 60%),
+    var(--ink-2);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 680ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.rise-2 {
+  animation-delay: 70ms;
+}
+
+.rise-3 {
+  animation-delay: 140ms;
+}
+
+.rise-4 {
+  animation-delay: 210ms;
+}
+
+.rise-5 {
+  animation-delay: 280ms;
 }
