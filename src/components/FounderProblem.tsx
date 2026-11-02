@@ -6,7 +6,7 @@ export function FounderProblem() {
     <Section labelledBy="gap-title" className="border-t border-line">
       <div className="grid gap-14 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-6">
-          <Eyebrow index="01">The gap</Eyebrow>
+          <Eyebrow>The gap</Eyebrow>
           <h2 id="gap-title" className="title mt-5 text-paper">
             Great ideas shouldn&apos;t die because you&apos;re not technical.
           </h2>

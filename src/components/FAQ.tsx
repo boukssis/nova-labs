@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Eyebrow } from "@/components/Section";
 import { faqs } from "@/content/site";
 
 export function FAQ() {
@@ -10,7 +11,8 @@ export function FAQ() {
     <section id="faq" aria-labelledby="faq-title" className="border-t border-line py-24 md:py-32 lg:py-40">
       <div className="mx-auto grid w-full max-w-[1180px] gap-12 px-5 sm:px-8 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <h2 id="faq-title" className="title">
+          <Eyebrow index="06">FAQ</Eyebrow>
+          <h2 id="faq-title" className="title mt-5">
             Questions worth asking first.
           </h2>
         </div>

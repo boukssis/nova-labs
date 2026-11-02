@@ -6,7 +6,7 @@ export function Work() {
   return (
     <Section id="work" labelledBy="work-title" className="border-t border-line">
       <div className="max-w-2xl">
-        <Eyebrow index="03">The work</Eyebrow>
+        <Eyebrow index="02">Work</Eyebrow>
         <h2 id="work-title" className="title mt-5">
           Built in the real world.
         </h2>

@@ -43,7 +43,7 @@ export function BuildProcess() {
     >
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         <div className="max-w-2xl">
-          <Eyebrow index="04">How it happens</Eyebrow>
+          <Eyebrow index="03">Process</Eyebrow>
           <h2 id="process-title" className="title mt-5">
             From idea to launch.
           </h2>

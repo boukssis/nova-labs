@@ -7,7 +7,7 @@ export function Founder() {
     <Section id="about" labelledBy="about-title" className="border-t border-line">
       <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
-          <Eyebrow index="06">The founder</Eyebrow>
+          <Eyebrow index="05">About</Eyebrow>
           <h2 id="about-title" className="title mt-5">
             Built by a founder, for founders.
           </h2>

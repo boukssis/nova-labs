@@ -4,15 +4,19 @@ export function Eyebrow({
   index,
   children,
 }: {
-  index: string;
+  index?: string;
   children: ReactNode;
 }) {
   return (
     <p className="font-mono text-[11px] font-medium tracking-[0.18em] text-mute uppercase">
-      <span className="text-ember">{index}</span>
-      <span className="mx-2.5 text-paper/35" aria-hidden>
-        /
-      </span>
+      {index ? (
+        <>
+          <span className="text-ember">{index}</span>
+          <span className="mx-2.5 text-paper/35" aria-hidden>
+            /
+          </span>
+        </>
+      ) : null}
       {children}
     </p>
   );
