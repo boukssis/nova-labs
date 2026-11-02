@@ -12,7 +12,7 @@ export function FinalCTA() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 50% 60% at 15% 40%, rgba(255,77,26,0.12), transparent 55%), radial-gradient(ellipse 40% 50% at 90% 80%, rgba(247,246,242,0.03), transparent 50%)",
+            "radial-gradient(ellipse 50% 60% at 15% 40%, rgba(37,99,234,0.16), transparent 55%), radial-gradient(ellipse 40% 50% at 90% 80%, rgba(247,250,255,0.03), transparent 50%)",
         }}
       />
       <div className="relative mx-auto w-full max-w-[1180px] px-5 sm:px-8">

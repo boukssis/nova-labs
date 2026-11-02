@@ -142,7 +142,7 @@ export function BuildField() {
       if (frameProgress > 0) {
         context.save();
         context.globalAlpha = frameProgress;
-        context.strokeStyle = "rgba(255, 77, 26, 0.9)";
+        context.strokeStyle = "rgba(37, 99, 234, 0.95)";
         context.lineWidth = 1;
         context.beginPath();
         context.roundRect(width * 0.62, height * 0.5, width * 0.31, height * 0.4, 8);
@@ -168,15 +168,15 @@ export function BuildField() {
 
         if (node.core) {
           const glow = context.createRadialGradient(x, y, 0, x, y, 34 * scale);
-          glow.addColorStop(0, "rgba(255, 77, 26, 0.55)");
-          glow.addColorStop(1, "rgba(255, 77, 26, 0)");
+          glow.addColorStop(0, "rgba(37, 99, 234, 0.55)");
+          glow.addColorStop(1, "rgba(37, 99, 234, 0)");
           context.fillStyle = glow;
           context.beginPath();
           context.arc(x, y, 34 * scale, 0, Math.PI * 2);
           context.fill();
-          context.fillStyle = "#FF4D1A";
+          context.fillStyle = "#2563EA";
         } else {
-          context.fillStyle = "#F7F6F2";
+          context.fillStyle = "#F7FAFF";
         }
 
         context.beginPath();
@@ -184,7 +184,7 @@ export function BuildField() {
         context.fill();
 
         if (node.label && node.side) {
-          context.fillStyle = node.core ? "#FF4D1A" : "rgba(247, 246, 242, 0.78)";
+          context.fillStyle = node.core ? "#4D9CFF" : "rgba(247, 250, 255, 0.78)";
           context.textBaseline = "middle";
           if (node.side === "left") {
             context.textAlign = "right";
@@ -280,7 +280,7 @@ export function BuildField() {
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 55% 50% at 42% 48%, rgba(255,77,26,0.14), transparent 62%)",
+              "radial-gradient(ellipse 55% 50% at 42% 48%, rgba(37,99,234,0.16), transparent 62%)",
           }}
         />
         <div className="relative flex items-center justify-between border-b border-line/80 px-3.5 py-2.5">
@@ -305,15 +305,15 @@ export function BuildField() {
         />
         <span
           aria-hidden
-          className="pointer-events-none absolute top-[46px] right-2.5 size-3 border-t border-r border-white/20"
+          className="pointer-events-none absolute top-[46px] right-2.5 size-3 border-t border-r border-paper/20"
         />
         <span
           aria-hidden
-          className="pointer-events-none absolute bottom-2.5 left-2.5 size-3 border-b border-l border-white/20"
+          className="pointer-events-none absolute bottom-2.5 left-2.5 size-3 border-b border-l border-paper/20"
         />
         <span
           aria-hidden
-          className="pointer-events-none absolute right-2.5 bottom-2.5 size-3 border-r border-b border-white/20"
+          className="pointer-events-none absolute right-2.5 bottom-2.5 size-3 border-r border-b border-paper/20"
         />
       </div>
       <figcaption className="mt-3 flex items-center justify-between gap-4 font-mono text-[10px] tracking-[0.16em] text-mute uppercase">

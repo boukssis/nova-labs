@@ -17,10 +17,10 @@ export default function Home() {
       <Hero />
       <FounderProblem />
       <Capabilities />
+      <Work />
       <BuildProcess />
       <WhyNova />
       <Founder />
-      <Work />
       <AIPhilosophy />
       <Engagement />
       <IdealClients />

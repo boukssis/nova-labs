@@ -36,10 +36,14 @@ export function BuildProcess() {
   const progress = ((index + 1) / steps.length) * 100;
 
   return (
-    <section id="process" aria-labelledby="process-title" className="border-t border-line py-24 md:py-32 lg:py-40">
+    <section
+      id="process"
+      aria-labelledby="process-title"
+      className="border-t border-line py-24 md:py-32 lg:py-40"
+    >
       <div className="mx-auto w-full max-w-[1180px] px-5 sm:px-8">
         <div className="max-w-2xl">
-          <Eyebrow index="03">How it happens</Eyebrow>
+          <Eyebrow index="04">How it happens</Eyebrow>
           <h2 id="process-title" className="title mt-5">
             From idea to launch.
           </h2>
@@ -48,32 +52,41 @@ export function BuildProcess() {
           </p>
         </div>
 
-        <div className="mt-12 border-y border-line">
-          <ol className="grid sm:grid-cols-3">
-            {rhythm.map((item, itemIndex) => (
-              <li
-                key={item.label}
-                className={`py-6 sm:px-6 sm:py-8 ${
-                  itemIndex > 0 ? "border-t border-line sm:border-t-0 sm:border-l" : "sm:pl-0"
-                }`}
-              >
-                <p className="font-mono text-[11px] tracking-[0.16em] text-ember uppercase">
-                  0{itemIndex + 1}
-                </p>
-                <p className="mt-3 text-3xl tracking-[-0.04em]">{item.time}</p>
-                <p className="mt-1 text-mute">{item.label}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <ol className="mt-12 grid border border-line md:grid-cols-3">
+          {rhythm.map((item, itemIndex) => (
+            <li
+              key={item.label}
+              className={`relative bg-ink-2/40 px-5 py-7 md:px-7 md:py-9 ${
+                itemIndex > 0 ? "border-t border-line md:border-t-0 md:border-l" : ""
+              }`}
+            >
+              {itemIndex < rhythm.length - 1 ? (
+                <span
+                  aria-hidden
+                  className="absolute top-1/2 right-0 z-10 hidden size-2 translate-x-1/2 -translate-y-1/2 rounded-full bg-ember md:block"
+                />
+              ) : null}
+              <p className="font-mono text-[11px] tracking-[0.16em] text-ember uppercase">
+                0{itemIndex + 1}
+              </p>
+              <p className="mt-3 text-[2rem] tracking-[-0.04em] text-paper md:text-3xl">
+                {item.time}
+              </p>
+              <p className="mt-1 text-mute">{item.label}</p>
+            </li>
+          ))}
+        </ol>
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-mute">
-          Nova&apos;s published working rhythm. A larger product moves the dates. It does not skip the steps.
+          Nova&apos;s published working rhythm. A larger product moves the dates. It does
+          not skip the steps.
         </p>
 
         <div className="mt-20 grid lg:grid-cols-12 lg:gap-14">
           <div className="hidden lg:col-span-5 lg:block">
             <div className="sticky top-28">
-              <p className="font-mono text-[11px] tracking-[0.18em] text-mute uppercase">Now forming</p>
+              <p className="font-mono text-[11px] tracking-[0.18em] text-mute uppercase">
+                Now forming
+              </p>
               <p
                 className="mt-4 text-[clamp(3.4rem,5.4vw,6rem)] leading-[0.84] font-medium tracking-[-0.055em] uppercase"
                 aria-hidden
@@ -142,8 +155,12 @@ export function BuildProcess() {
                       0{stepIndex + 1}
                       <span className="ml-3 text-mute lg:hidden">{step.word}</span>
                     </p>
-                    <h3 className="mt-3 text-[1.7rem] tracking-[-0.035em] md:text-[2rem]">{step.title}</h3>
-                    <p className="mt-3 max-w-xl text-[17px] leading-relaxed text-mute">{step.body}</p>
+                    <h3 className="mt-3 text-[1.7rem] tracking-[-0.035em] md:text-[2rem]">
+                      {step.title}
+                    </h3>
+                    <p className="mt-3 max-w-xl text-[17px] leading-relaxed text-mute">
+                      {step.body}
+                    </p>
                   </li>
                 );
               })}

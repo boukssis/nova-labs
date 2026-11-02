@@ -36,7 +36,7 @@ export const capabilities = [
   },
   {
     title: "Internal systems",
-    body: "Tools that take manual work out of a real operation. Understand the process first. Then build the part technology should own. That includes production systems in the UK public sector.",
+    body: "Tools that take manual work out of a real operation. Understand the process first. Then build the part technology should own.",
   },
   {
     title: "Custom software",
@@ -44,7 +44,7 @@ export const capabilities = [
   },
   {
     title: "Technical strategy",
-    body: "What to build, what to leave out, and what done means — agreed before the wrong thing gets made. This is the scope, before the build.",
+    body: "What to build, what to leave out, and what done means — agreed before the wrong thing gets made.",
   },
 ] as const;
 
@@ -63,22 +63,22 @@ export const steps = [
   {
     word: "Scope",
     title: "Define",
-    body: "Turn the idea into a product and a technical scope. What the first version is. What it is not. Who it is for. The build starts from that, not from a wishlist.",
+    body: "Turn the idea into a product and a technical scope. What the first version is. What it is not. Who it is for.",
   },
   {
     word: "Build",
     title: "Build",
-    body: "Develop the working product in the open. You should be able to use it, not just hear about it. Progress is something you can click, not a status slide.",
+    body: "Develop the working product in the open. Progress is something you can click, not a status slide.",
   },
   {
     word: "Product",
     title: "Test",
-    body: "Put it in front of real users. Watch what they actually do. Keep what holds. Drop what only sounded convincing in a meeting.",
+    body: "Put it in front of real users. Keep what holds. Drop what only sounded convincing in a meeting.",
   },
   {
     word: "Launch",
     title: "Launch",
-    body: "Move from a promising build to something that can run for real. A prototype proves the idea. A launch is when other people can depend on it.",
+    body: "Move from a promising build to something that can run for real. A launch is when other people can depend on it.",
   },
   {
     word: "Refine",
@@ -94,15 +94,11 @@ export const reasons = [
   },
   {
     title: "Founder mindset",
-    body: "What gets built is a business decision. Scope, cost and sequence are treated that way — because shipping the wrong thing is a commercial failure, not a technical one.",
+    body: "What gets built is a business decision. Shipping the wrong thing is a commercial failure, not a technical one.",
   },
   {
     title: "AI with a reason",
-    body: "Technology has to earn its place. If it doesn't create value, it doesn't go in. Impressive is not a requirement.",
-  },
-  {
-    title: "Think first. Then move.",
-    body: "Speed matters. Building the wrong thing quickly is still a failure. The scope exists so the build can be fast without being careless.",
+    body: "Technology has to earn its place. If it doesn't create value, it doesn't go in.",
   },
   {
     title: "No layer in between",
@@ -161,7 +157,6 @@ export const fits = [
 
 export const notAFit = [
   "You want AI added because everyone else is talking about it.",
-  "You want a long specification before anyone speaks to a user.",
   "You are looking for the cheapest developer.",
   "You can't yet say what business problem this solves.",
 ] as const;
@@ -195,26 +190,11 @@ export const faqs = [
   {
     question: "How quickly can we get something working?",
     answer:
-      "Nova's published rhythm is a scope in 7 days, a first working version around day 30, and a production-ready build around day 90. A larger product moves those dates. It doesn't skip the steps. You'll know the shape of the work before building starts.",
-  },
-  {
-    question: "Do you only build AI products?",
-    answer:
-      "No. AI products, voice and conversational systems, internal tools and custom software. AI is used where it creates value, and left out where it doesn't.",
-  },
-  {
-    question: "Can you work with an existing team?",
-    answer:
-      "Yes, if what's needed is a technical partner rather than another pair of hands to manage. Nova can lead the build alongside people you already have.",
+      "Nova's published rhythm is a scope in 7 days, a first working version around day 30, and a production-ready build around day 90. A larger product moves those dates. It doesn't skip the steps.",
   },
   {
     question: "How are projects structured?",
     answer:
-      "Around the stage you're at. Cash, equity, or a combination when equity actually fits. There isn't a public rate card. The work isn't identical from one founder to the next, and not every company is a fit for equity.",
-  },
-  {
-    question: "Can Nova stay on after launch?",
-    answer:
-      "Yes. Launch is a step, not the end of the work. Iteration is part of the engagement if you want a partner who stays with the product.",
+      "Around the stage you're at. Cash, equity, or a combination when equity actually fits. There isn't a public rate card, and not every company is a fit for equity.",
   },
 ] as const;

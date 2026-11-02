@@ -5,7 +5,7 @@ export function Capabilities() {
   return (
     <Section id="build" labelledBy="build-title" className="border-t border-line">
       <div className="max-w-2xl">
-        <Eyebrow index="02">What we build</Eyebrow>
+        <Eyebrow index="02">Capabilities</Eyebrow>
         <h2 id="build-title" className="title mt-5">
           What we build.
         </h2>

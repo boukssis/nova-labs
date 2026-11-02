@@ -18,8 +18,8 @@ export function ButtonLink({
 }: ButtonLinkProps) {
   const variantClass =
     variant === "primary"
-      ? "bg-ember text-ink hover:bg-ember-hot"
-      : "border border-white/20 text-paper hover:border-white/55";
+      ? "bg-ember text-paper hover:bg-ember-hot"
+      : "border border-line text-paper hover:border-ember-hot/60";
 
   return (
     <a

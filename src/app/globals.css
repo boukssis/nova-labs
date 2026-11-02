@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #070708;
-  --ink-2: #0d0d10;
-  --ink-3: #121216;
-  --paper: #f7f6f2;
-  --mute: #9d9ca5;
-  --line: rgba(247, 246, 242, 0.12);
-  --ember: #ff4d1a;
-  --ember-hot: #ff6840;
-  --ember-soft: rgba(255, 77, 26, 0.16);
+  --ink: #07111f;
+  --ink-2: #0b1728;
+  --ink-3: #101e32;
+  --paper: #f7faff;
+  --mute: #9eadbf;
+  --line: #1d3048;
+  --ember: #2563ea;
+  --ember-hot: #4d9cff;
+  --ember-soft: rgba(37, 99, 234, 0.16);
   --background: var(--ink);
   --foreground: var(--paper);
 }
@@ -34,7 +34,7 @@ html {
   scroll-behavior: smooth;
   color-scheme: dark;
   background: var(--ink);
-  scrollbar-color: #2a2a2e var(--ink);
+  scrollbar-color: #1d3048 var(--ink);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -49,8 +49,8 @@ html {
 
 body {
   background:
-    radial-gradient(ellipse 80% 50% at 85% -10%, rgba(255, 77, 26, 0.09), transparent 55%),
-    radial-gradient(ellipse 60% 40% at 0% 20%, rgba(247, 246, 242, 0.03), transparent 50%),
+    radial-gradient(ellipse 80% 50% at 88% -8%, rgba(37, 99, 234, 0.14), transparent 55%),
+    radial-gradient(ellipse 55% 40% at 0% 18%, rgba(247, 250, 255, 0.03), transparent 50%),
     var(--ink);
   color: var(--paper);
   font-family: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
@@ -63,18 +63,18 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: 70;
-  opacity: 0.035;
+  opacity: 0.03;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-size: 180px 180px;
 }
 
 ::selection {
   background: var(--ember);
-  color: var(--ink);
+  color: var(--paper);
 }
 
 :focus-visible {
-  outline: 2px solid var(--paper);
+  outline: 2px solid var(--ember-hot);
   outline-offset: 3px;
 }
 
@@ -97,7 +97,7 @@ p {
   font-size: clamp(2.85rem, 7.4vw, 6.75rem);
   font-weight: 500;
   letter-spacing: -0.05em;
-  line-height: 0.86;
+  line-height: 0.88;
 }
 
 .title {
@@ -105,12 +105,6 @@ p {
   font-weight: 500;
   letter-spacing: -0.04em;
   line-height: 0.98;
-}
-
-.brand-mark {
-  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
-  font-weight: 500;
-  letter-spacing: -0.045em;
 }
 
 .link {
@@ -127,7 +121,7 @@ p {
 
 .surface-glow {
   background:
-    radial-gradient(ellipse 70% 60% at 70% 40%, rgba(255, 77, 26, 0.08), transparent 60%),
+    radial-gradient(ellipse 70% 60% at 70% 40%, rgba(37, 99, 234, 0.12), transparent 60%),
     var(--ink-2);
 }
 

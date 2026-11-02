@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-[1180px] gap-12 px-5 py-16 sm:px-8 md:grid-cols-12">
         <div className="md:col-span-5">
           <a href="/" aria-label="Nova Labs, home">
-            <Wordmark className="text-2xl" />
+            <Wordmark className="text-xl" />
           </a>
           <p className="mt-4 max-w-xs text-mute">
             Technical AI partner for non-technical founders.

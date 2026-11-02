@@ -1,6 +1,5 @@
 import { BuildField } from "@/components/BuildField";
 import { ButtonLink } from "@/components/ButtonLink";
-import { Wordmark } from "@/components/Wordmark";
 import { links } from "@/content/site";
 
 export function Hero() {
@@ -11,17 +10,13 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(ellipse 55% 70% at 78% 48%, rgba(255,77,26,0.12), transparent 58%), radial-gradient(ellipse 40% 50% at 10% 80%, rgba(247,246,242,0.03), transparent 55%)",
+            "radial-gradient(ellipse 55% 70% at 78% 48%, rgba(37,99,234,0.16), transparent 58%), radial-gradient(ellipse 40% 50% at 10% 80%, rgba(247,250,255,0.03), transparent 55%)",
         }}
       />
 
       <div className="mx-auto grid w-full max-w-[1180px] items-center gap-10 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-6 xl:col-span-7">
-          <div className="rise">
-            <Wordmark className="brand-mark" />
-          </div>
-
-          <div className="rise rise-2 mt-8 flex flex-wrap items-center gap-x-4 gap-y-2">
+          <div className="rise flex flex-wrap items-center gap-x-4 gap-y-2">
             <p className="font-mono text-[11px] font-medium tracking-[0.18em] text-mute uppercase">
               Technical AI partner for founders
             </p>
@@ -33,21 +28,20 @@ export function Hero() {
             </p>
           </div>
 
-          <h1 className="display rise rise-3 mt-6 text-paper">
+          <h1 className="display rise rise-2 mt-7 text-paper">
             <span className="block">Your idea.</span>
-            <span className="block">Built</span>
-            <span className="block">
-              properly<span className="text-ember">.</span>
+            <span className="mt-1 block sm:mt-2">
+              Built properly<span className="text-ember">.</span>
             </span>
           </h1>
 
-          <p className="rise rise-4 mt-7 max-w-[36rem] text-[17px] leading-relaxed text-mute sm:text-lg">
+          <p className="rise rise-3 mt-7 max-w-[36rem] text-[17px] leading-relaxed text-mute sm:text-lg">
             You bring the idea. We make it real. Nova Labs designs, builds and launches
             AI-powered products and systems with founders who shouldn&apos;t have to become
             the engineering department.
           </p>
 
-          <div className="rise rise-5 mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="rise rise-4 mt-8 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href={links.apply} external className="w-full sm:w-auto">
               Start Building
             </ButtonLink>

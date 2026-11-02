@@ -98,7 +98,7 @@ export function Navbar() {
             href={links.apply}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden min-h-10 items-center bg-ember px-4 text-[12px] font-medium tracking-[0.14em] text-ink uppercase transition-colors duration-300 hover:bg-ember-hot lg:inline-flex"
+            className="hidden min-h-10 items-center bg-ember px-4 text-[12px] font-medium tracking-[0.14em] text-paper uppercase transition-colors duration-300 hover:bg-ember-hot lg:inline-flex"
           >
             Start Building
             <span className="sr-only"> (opens in a new tab)</span>
@@ -158,7 +158,7 @@ export function Navbar() {
               href={links.apply}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-auto inline-flex min-h-12 items-center justify-center bg-ember px-5 text-[15px] font-medium text-ink"
+              className="mt-auto inline-flex min-h-12 items-center justify-center bg-ember px-5 text-[15px] font-medium text-paper"
             >
               Start Building
               <span className="sr-only"> (opens in a new tab)</span>

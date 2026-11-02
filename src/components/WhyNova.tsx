@@ -6,7 +6,7 @@ export function WhyNova() {
     <Section id="why" labelledBy="why-title" className="border-t border-line">
       <div className="grid gap-14 lg:grid-cols-12">
         <div className="lg:col-span-5">
-          <Eyebrow index="04">Why Nova</Eyebrow>
+          <Eyebrow index="05">Why Nova</Eyebrow>
           <h2 id="why-title" className="title mt-5">
             Not another development agency.
           </h2>
