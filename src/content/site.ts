@@ -7,8 +7,8 @@ export const links = {
 } as const;
 
 export const nav = [
-  { href: "/#work", id: "work", label: "Work" },
   { href: "/#build", id: "build", label: "What we build" },
+  { href: "/#work", id: "work", label: "Work" },
   { href: "/#process", id: "process", label: "Process" },
   { href: "/#why", id: "why", label: "Why Nova" },
   { href: "/#about", id: "about", label: "About" },
