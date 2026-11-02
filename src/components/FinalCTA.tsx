@@ -5,7 +5,7 @@ export function FinalCTA() {
   return (
     <section
       aria-labelledby="close-title"
-      className="relative overflow-hidden border-t border-line py-28 md:py-36 lg:py-44"
+      className="relative overflow-hidden border-t border-line py-28 md:py-36 lg:py-40"
     >
       <div
         aria-hidden
@@ -20,7 +20,7 @@ export function FinalCTA() {
         <h2 id="close-title" className="title mt-8 max-w-[12ch]">
           Still thinking about the idea?
         </h2>
-        <p className="mt-6 max-w-xl text-2xl tracking-[-0.035em] text-paper md:text-3xl">
+        <p className="mt-6 max-w-lg text-2xl tracking-[-0.035em] text-paper md:text-[2rem]">
           Let&apos;s work out whether it&apos;s worth building.
         </p>
         <div className="mt-10">
@@ -29,8 +29,8 @@ export function FinalCTA() {
           </ButtonLink>
         </div>
         <p className="mt-6 max-w-md text-sm leading-relaxed text-mute">
-          A short application. If it&apos;s a fit, we&apos;ll talk the idea through properly.
-          Manchester, United Kingdom.
+          Engagements can be structured around cash, equity or a combination where
+          appropriate.
         </p>
       </div>
     </section>

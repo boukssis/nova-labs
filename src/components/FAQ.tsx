@@ -8,12 +8,16 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" aria-labelledby="faq-title" className="border-t border-line py-24 md:py-32 lg:py-40">
-      <div className="mx-auto grid w-full max-w-[1180px] gap-12 px-5 sm:px-8 lg:grid-cols-12">
+    <section
+      id="faq"
+      aria-labelledby="faq-title"
+      className="border-t border-line py-24 md:py-32 lg:py-36"
+    >
+      <div className="mx-auto grid w-full max-w-[1180px] gap-10 px-5 sm:px-8 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-4">
           <Eyebrow index="06">FAQ</Eyebrow>
-          <h2 id="faq-title" className="title mt-5">
-            Questions worth asking first.
+          <h2 id="faq-title" className="title mt-5 max-w-[10ch]">
+            Quick answers.
           </h2>
         </div>
         <div className="border-t border-line lg:col-span-8">
@@ -48,7 +52,7 @@ export function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="max-w-2xl pb-6 leading-relaxed text-mute">{item.answer}</p>
+                    <p className="max-w-xl pb-5 leading-relaxed text-mute">{item.answer}</p>
                   </div>
                 </div>
               </div>

@@ -4,7 +4,7 @@ import { links } from "@/content/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-5 pt-28 pb-16 sm:px-8 md:pt-32 lg:flex lg:min-h-[100svh] lg:items-center lg:pt-24 lg:pb-16">
+    <section className="relative overflow-hidden px-5 pt-28 pb-20 sm:px-8 md:pt-32 lg:flex lg:min-h-[100svh] lg:items-center lg:pt-24 lg:pb-20">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
@@ -14,7 +14,7 @@ export function Hero() {
         }}
       />
 
-      <div className="mx-auto grid w-full max-w-[1180px] items-center gap-10 lg:grid-cols-12 lg:gap-8">
+      <div className="mx-auto grid w-full max-w-[1180px] items-center gap-12 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-6 xl:col-span-7">
           <div className="rise flex flex-wrap items-center gap-x-4 gap-y-2">
             <p className="font-mono text-[11px] font-medium tracking-[0.18em] text-mute uppercase">
@@ -35,18 +35,20 @@ export function Hero() {
             </span>
           </h1>
 
-          <p className="rise rise-3 mt-7 max-w-[36rem] text-[17px] leading-relaxed text-mute sm:text-lg">
-            You bring the idea. We make it real. Nova Labs designs, builds and launches
-            AI-powered products and systems with founders who shouldn&apos;t have to become
-            the engineering department.
+          <p className="rise rise-3 mt-6 max-w-[34rem] text-lg leading-relaxed text-mute">
+            You bring the idea. We make it real.
+          </p>
+          <p className="rise rise-3 mt-3 max-w-[34rem] text-[16px] leading-relaxed text-mute">
+            Nova Labs helps non-technical founders turn ideas into working AI products and
+            software.
           </p>
 
-          <div className="rise rise-4 mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="rise rise-4 mt-9 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href={links.apply} external className="w-full sm:w-auto">
               Start Building
             </ButtonLink>
-            <ButtonLink href="/#process" variant="secondary" className="w-full sm:w-auto">
-              See how it works
+            <ButtonLink href="/#work" variant="secondary" className="w-full sm:w-auto">
+              See the Work
             </ButtonLink>
           </div>
 
